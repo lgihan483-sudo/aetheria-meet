@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+  }
+
+  body {
+    background-color: #080c15;
+    color: #e2e8f0;
+    font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Fredoka One', 'Fredoka', cursive, sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Minimal Professional LiveKit Theme */
+.lk-video-conference {
+  background-color: #080c15 !important;
+}
+
+.lk-video-conference-inner {
+  padding: 0.75rem !important;
+}
+
+.lk-participant-tile {
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  background-color: #0e1424 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.lk-participant-tile[data-lk-speaking="true"] {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.3) !important;
+}
+
+.lk-control-bar {
+  background-color: rgba(14, 20, 36, 0.9) !important;
+  backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9999px !important;
+  padding: 6px 18px !important;
+  gap: 8px !important;
+  box-shadow: 0 16px 24px -4px rgba(0, 0, 0, 0.45) !important;
+  margin-bottom: 1rem !important;
+}
+
+.lk-button {
+  border-radius: 0.625rem !important;
+  font-family: 'Fredoka', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.8125rem !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.lk-button:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.lk-disconnect-button {
+  background-color: #e11d48 !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.lk-disconnect-button:hover {
+  background-color: #be123c !important;
+}
