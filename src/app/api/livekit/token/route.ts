@@ -52,9 +52,9 @@ async function handleTokenGeneration(roomName: string | null): Promise<NextRespo
   const apiKey = process.env.LIVEKIT_API_KEY ? process.env.LIVEKIT_API_KEY.trim() : undefined;
   const apiSecret = process.env.LIVEKIT_API_SECRET ? process.env.LIVEKIT_API_SECRET.trim() : undefined;
   const serverUrl =
-    (process.env.NEXT_PUBLIC_LIVEKIT_URL && process.env.NEXT_PUBLIC_LIVEKIT_URL.trim()) ||
     (process.env.LIVEKIT_URL && process.env.LIVEKIT_URL.trim()) ||
-    "ws://127.0.0.1:7880";
+    (process.env.NEXT_PUBLIC_LIVEKIT_URL && process.env.NEXT_PUBLIC_LIVEKIT_URL.trim()) ||
+    "wss://test2-oibbhwn1.livekit.cloud";
 
   // Debug logging to verify key configuration without leaking secrets
   console.log("Using API Key:", apiKey);
