@@ -2,6 +2,8 @@ import React from "react";
 import { notFound } from "next/navigation";
 import VideoRoom from "@/components/video/VideoRoom";
 
+export const dynamic = "force-dynamic";
+
 interface RoomPageProps {
   params: {
     roomName: string;
