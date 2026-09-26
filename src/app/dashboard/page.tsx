@@ -131,7 +131,6 @@ export default function DashboardPage() {
   };
 
   const username = user?.name || "Corporate Member";
-  const userEmail = user?.email || "employee@aetheria.corp";
   const userRole = user?.role || "Enterprise Member";
 
   return (
